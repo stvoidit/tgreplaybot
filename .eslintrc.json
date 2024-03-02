@@ -1,0 +1,65 @@
+{
+    "root": true,
+    "env": {
+        "node": true,
+        "browser": true
+    },
+    "plugins": [],
+    "globals": {
+        "NodeJS": true
+    },
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "rules": {
+        "no-useless-escape": 0,
+        "comma-dangle": [
+            "warn",
+            "never"
+        ],
+        "no-console": "warn",
+        "no-unused-vars": [
+            "warn",
+            {
+                "args": "none"
+            }
+        ],
+        "array-bracket-newline": [
+            "warn",
+            {
+                "multiline": true,
+                "minItems": 2
+            }
+        ],
+        "array-element-newline": [
+            "warn",
+            "always"
+        ],
+        "quotes": [
+            "warn",
+            "double",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "indent": [
+            "warn",
+            4,
+            {
+                "SwitchCase": 0
+            }
+        ],
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "semi-style": [
+            "error",
+            "last"
+        ]
+    }
+}
